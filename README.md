@@ -37,5 +37,8 @@ Run Tests in Parallel
 pytest -n 4
 Use -n auto to auto-detect CPU cores.
 
+Run tests in multiple browsers
+pytest --browser chromium --browser firefox --browser webkit
+
 👤 Author
 Suraj Kukkipady
