@@ -21,11 +21,11 @@ def test_add_to_cart_one_item(page: Page):
     inventory = InventoryPage(page)
     inventory.add_first_item_to_cart()
 
-    # ✅ Assert the button changes to "Remove"
+    #Assert the button changes to "Remove"
     button_text = inventory.get_first_item_button_text()
     assert button_text == "Remove", f"Expected button to say 'Remove', but got '{button_text}'"
 
-    # ✅ Assert cart badge shows 1
+    #Assert cart badge shows 1
     cart_count = inventory.get_cart_badge_count()
     assert cart_count == "1", f"Expected cart badge to show '1', but got '{cart_count}'"
 
